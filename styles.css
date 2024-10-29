@@ -6,22 +6,26 @@
 }
 body, html{
     height: 100%;
-}
-.background{
-    background-image: url('img/background.jpg');
-    background-size:cover;
-    background-position: center;
-    display: flex;
+    margin:0;
+    display:flex;
     justify-content: center;
     align-items: center;
+    background-image: url('img/background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;  
 }
+
+
 .payment{
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 300px;
-    text-align: center;
+    background-color: white;
     padding: 20px;
+    box-shadow:0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .header h2{
     margin-bottom: 20px;
@@ -32,7 +36,7 @@ body, html{
 .payment-options{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    
 }
 .options{
     display: flex;
@@ -59,7 +63,7 @@ body, html{
     text-align: left;
 }
 .options .text.disabled{
-    color: darkgrey;
+    color: rgb(118, 116, 116);
 }
 .options .checkmark{
     color: green;
@@ -69,21 +73,23 @@ body, html{
 .options input:checked +.logo + .text + .checkmark {
     display: inline-block;
 }
-.options .checkmark{
-    display: none;
 
+.options:hover{
+    background-color: darkgrey;
 }
 .next-button{
-    margin-top: 20px;
-    background-color: blue;
-    color:white;
-    padding: 10px 20px;
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(44, 89, 203);
+    color: white;
     border: none;
-    border-radius:4px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
+
 .next-button:hover{
-    background-color: darkblue;
+    background-color: rgb(60, 135, 247);
 }
