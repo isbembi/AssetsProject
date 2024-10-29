@@ -44,3 +44,18 @@ body, html{
     position: relative;
     transition: background-color 0.3s ease;
 }
+.options input{
+    display: none;
+}
+.options img.logo{
+    width: 30px;
+    height:auto;
+    margin-right: 10px;
+}
+.options .text{
+    font-weight: bold;
+    color:black;
+    flex-grow: 1;
+    text-align: left;
+    
+}
