@@ -57,5 +57,33 @@ body, html{
     color:black;
     flex-grow: 1;
     text-align: left;
-    
+}
+.options .text.disabled{
+    color: darkgrey;
+}
+.options .checkmark{
+    color: green;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.options input:checked +.logo + .text + .checkmark {
+    display: inline-block;
+}
+.options .checkmark{
+    display: none;
+
+}
+.next-button{
+    margin-top: 20px;
+    background-color: blue;
+    color:white;
+    padding: 10px 20px;
+    border: none;
+    border-radius:4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.next-button:hover{
+    background-color: darkblue;
 }
