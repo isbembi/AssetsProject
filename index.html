@@ -1,37 +1,27 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="./styles.css" />
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Method</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 1 - Step 2</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 </head>
 <body>
-    <div class="background">
-        <div class="payment-container">
-            <div class="header">
-                <h2>PAYMENT METHOD</h2>
-            </div>
-            <div class="payment-options">
-                <label class="option">
-                    <input type="radio" name="payment" disabled>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="logo">
-                    <span class="text disabled">VISA</span>
-                </label>
-                <label class="option">
-                    <input type="radio" name="payment" checked>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/MasterCard_Logo.svg" alt="Mastercard" class="logo">
-                    <span class="text">MASTERCARD</span>
-                    <span class="checkmark">✔</span>
-                </label>
-                <label class="option">
-                    <input type="radio" name="payment" disabled>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Maestro_logo.svg" alt="Maestro" class="logo">
-                    <span class="text disabled">MAESTRO</span>
-                </label>
-            </div>
-            <button class="next-button">NEXT STEP ➔</button>
-        </div>
+  <div class="background">
+    <div class="payment">
+      <div class="header">
+        <h2> PAYMENT METHOD</h2>
+      </div>
+      <div class="payment-options">
+        <label class="options">
+          <input type="radio" name="payment" disabled>
+          <img src="img/mastercard.svg" alt="Mastercard" class="logo">
+          <span class="text disabled">VISA</span>
+        </label>
+      </div>
     </div>
+  </div>
 </body>
 </html>
