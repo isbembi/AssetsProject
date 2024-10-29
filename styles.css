@@ -23,3 +23,24 @@ body, html{
     text-align: center;
     padding: 20px;
 }
+.header h2{
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: black;
+    font-weight: bold;
+}
+.payment-options{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.options{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
